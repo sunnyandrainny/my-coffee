@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.top-menu-item{
+    @apply cursor-pointer py-1 hover:text-gray-800 relative after:absolute after:bottom-0 after:left-0 after:bg-coffee-200 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-300;
+}
+.top-menu-item-active{
+    @apply cursor-pointer py-1 hover:text-gray-800 relative after:absolute after:bottom-0 after:left-0 after:bg-coffee-200 after:h-0.5 after:w-0;
+}
+.top-menu-expanded{
+    @apply absolute max-lg:top-20 max-lg:z-50 max-lg:w-full max-lg:bg-white text-center animate-slideDown;
+}
+.icon-cart{
+    @apply lg:w-5 lg:h-5 inline-block;
+}
+.badge{
+    @apply rounded-full px-1.5 text-center text-xs
+}
+.label{
+    @apply flex justify-center items-center;
+}
+.icon-label{
+    @apply  w-8 h-px bg-gray-300;
+}
+.tag-label {
+    @apply mx-4 uppercase text-gray-400 text-xs font-bold tracking-widest text-center;
+}
+.button {
+    @apply text-center uppercase tracking-wider py-4 px-8 text-[13px] font-semibold cursor-pointer hover:bg-opacity-90
+}
+.active{
+    @apply text-black
+}
+
